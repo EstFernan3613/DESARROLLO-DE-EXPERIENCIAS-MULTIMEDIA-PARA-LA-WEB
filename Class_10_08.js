@@ -4,24 +4,24 @@ function ejercicio(dataA,dataB){
         if (resultado >= 0){
             resolve(resultado)
         } else{
-            reject(new Error("Hay un error"));
+            reject(new Error("La resta de los dos digitos da un numero negativo"));
         }
 })
 return FuncionPromesa
 }
 
-ejercicio(10, 4).then(resultado => {
+ejercicio(10, 2).then(resultado => {
     console.log("Resultado de la resta:", resultado);
   })
   .catch(error => {
-    console.error("Error:", error.message);
+    console.log(error);
   })
 
 
 const MetodoNuevo = async() =>{
     try{
-        const resultado = await ejercicio(10, 11);
-        console.log(resultado);
+        const resultado = await ejercicio(10, 1);
+        console.log("Resultado de la resta:", resultado);
     } catch(error){
         console.log(error);
     }
