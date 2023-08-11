@@ -25,7 +25,7 @@ const MetodoNuevo = async() =>{
     } catch(error){
         console.log(error);
     }
-} 
+}
 
 MetodoNuevo()
 
