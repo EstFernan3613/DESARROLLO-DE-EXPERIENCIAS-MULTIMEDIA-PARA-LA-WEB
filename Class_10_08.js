@@ -20,7 +20,7 @@ ejercicio(10, 2).then(resultado => {
 
 const MetodoNuevo = async() =>{
     try{
-        const resultado = await ejercicio(10, 1);
+        const resultado = await ejercicio(10, 2);
         console.log("Resultado de la resta:", resultado);
     } catch(error){
         console.log(error);
